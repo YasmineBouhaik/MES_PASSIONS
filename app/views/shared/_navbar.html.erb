@@ -2,25 +2,6 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-<div class="changeTheme"><img src="https://img.icons8.com/ios-filled/50/000000/clouds.png"/></div>
-  <script>
-    const switchThemeBtn = document.querySelector('.changeTheme')
-    let toggleTheme = 0;
-
-    switchThemeBtn.addEventListener('click', () => {
-        if(toggleTheme === 0) {
-            document.documentElement.style.setProperty('--color', '#262626');
-            document.documentElement.style.setProperty('--background', '#f1f1f1');
-            toggleTheme++;
-
-        } else {
-            document.documentElement.style.setProperty('--color', '#f1f1f1');
-            document.documentElement.style.setProperty('--background', '#262626');
-            toggleTheme--;
-        }
-    })
-  </script>
-</div>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -38,3 +19,16 @@
     </ul>
   </div>
 </nav>
+
+<script>
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "https://cdn-icons.flaticon.com/png/512/3222/premium/3222672.png?token=exp=1643830403~hmac=5ec0fa00b3a166cb70100a469b4bce0e";
+    }else{
+      icon.src = "https://cdn-icons-png.flaticon.com/512/1415/1415431.png";
+    }
+  }
+</script>
