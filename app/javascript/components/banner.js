@@ -6,7 +6,7 @@ const loadDynamicBannerText = () => {
   if (banner) {
     new Typed('#banner-typed-text', {
       strings: ["Sport 🚴‍♀️, musique 🥁 et voyages 🌎"],
-      typeSpeed: 50,
+      typeSpeed: 60,
       loop: true
     });
   }
