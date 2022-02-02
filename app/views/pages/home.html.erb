@@ -1,22 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <p><%= link_to "Sport", sport_path %></p>
-      </li>
-      <li class="nav-item">
-        <p><%= link_to "Musique", musique_path %></p>
-      </li>
-      <li class="nav-item">
-        <p><%= link_to "Voyages", voyage_path %></p>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+<%= render 'shared/navbar' %>
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);">
   <div class="container-title">
     <h1>Mes passions </h1>
@@ -32,7 +14,7 @@
       <br>
       <p>Salut, Je m'appelle Yasmine</p>
       <p>Voici un site dédié à mes passions. J'adore faire du sport, de la musique et voyager !
-      N'hésitez pas à m'envoyer un message via le formulaire !</p>
+      <br>N'hésitez pas à m'envoyer un message via le formulaire !</p>
       </div>
     </div>
   </div>
@@ -60,7 +42,7 @@
       <div class="icons pb-3">
        <a href = "" target="_blank"><i class="footer-icon fab fa-facebook-square fa-2x"></i></a>
        <a href = "" target="_blank"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
-       <a href = ""><i class="footer-icon fab fa-tiktok fa-2x"></i></a>
+       <a href = "" target="_blank"><i class="footer-icon fab fa-github fa-2x"></i></a>
       </div>
     </div>
     <p>© 2022 Passions YB 👩‍💻</p>
