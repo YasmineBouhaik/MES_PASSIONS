@@ -1,1 +1,21 @@
 <%= render 'shared/navbar' %>
+<div class="container d-flex justify-content-center">
+  <div class="card mb-3 mt-5" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/24297382_1537178243033484_5423448243149397906_o.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9hJpGb5xLL0AX92z3ym&_nc_ht=scontent-cdt1-1.xx&oh=00_AT8YTnTAEGuthMnRPcMUtcuyqg66LAZgaAYm8o1zJh3KIQ&oe=621EC31E" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Musique</h5>
+          <p class="card-text">J'ai, pendant quelques années, joué de la batterie dans un groupe de musique.</p>
+           <div class="bots <%= "transparent" if current_page?("http://www.bikeaway.live/") %> navbar navbar-expand-sm navbar-lewagon justify-content-top">
+            <%= link_to "https://www.deezer.com/search/beans%20on%20toast%20salvation", target:"_blank", class: "navbar-brand" do %>
+            <%= image_tag "logobots.png", style: "width: 50%" %><p>Click 🎧</p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
