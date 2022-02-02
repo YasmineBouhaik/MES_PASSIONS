@@ -19,36 +19,3 @@ h1 {
 .card {
   border-radius: 8px;
 }
-
-:root {
-    --color: #f1f1f1;
-    --background: #262626;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: var(--background);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: sans-serif;
-}
-h1 {
-    margin-top: 50px;
-    font-size: 80px;
-    color: var(--color);
-
-}
-.changeTheme {
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    background: white;
-    color: var(--color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    border-radius: 50px;
-}
