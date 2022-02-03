@@ -26,7 +26,21 @@
       </div>
     </div>
   </div>
+</div>
 
+<div class="container mb-5">
+  <input type="color" id="colorInputColor"><br>
+  <input type="button" id="colorButton" value="click to change color" onclick="changeColor()">
+  <script>
+    function changeColor() {
+      let color = document.getElementById('colorInputColor').value;
+      document.body.style.backgroundColor = color;
+      document.getElementById('colorInputText').value = color;
+    }
+  </script>
+</div>
+
+<div class="container">
   <form action="" method="post">
     <div>
         <label for="name">Nom :</label>
@@ -44,6 +58,7 @@
         <input type="submit" value="Envoyer" />
     </div>
   </form>
+</div>
 
 
 <footer class = "footer mt-5">
