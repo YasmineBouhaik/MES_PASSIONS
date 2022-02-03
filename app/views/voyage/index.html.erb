@@ -6,6 +6,11 @@
   }
   window.addEventListener('load', addDarkmodeWidget);
   </script>
+
+<div class="container mt-5">
+  <h2> Quelques photos prises lors de mes voyages 📸 </h2>
+</div>
+
 <div class="container">
   <div class="container mt-5 d-flex justify-content-center border-radius:8px;">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -32,10 +37,159 @@
   </div>
 </div>
 
-<div class="container mt-5 d-flex justify-content-center">
-  <div style="width: 60%; height: 400px;"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-  </div>
+<div class="container mt-5">
+    <h2> Quelques endroits sympas </h2>
 </div>
+
+<main class="container mt-3 my-3 d-flex align-items-center">
+  <hr>
+  <div class="mosaique">
+      <figure id="ancre1" class="img1">
+        <%= image_tag "vietnam.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Vietnam: Hanoï, Sapa, Mai Chau, Along Bay and Cat Ba island</div>
+        </div>
+      </figure>
+      <figure id="ancre2" class="img2 mt-5 mb-5">
+        <%= image_tag "laos.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Laos: Vientiane, Luang Prabang, Vang Vieng, Kuang Si</div>
+        </div>
+      </figure>
+       <figure id="ancre9" class="img9 mt-5">
+        <%= image_tag "belgique.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Belgium: Bruxelles, Anvers, Bruges</div>
+        </div>
+      </figure>
+      <figure id="ancre3" class="img3 mt-5">
+        <%= image_tag "inde.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">India: New-Delhi, Agra, Haridwar, Rishikesh (world capital of Yoga 🧘‍♀️)</div>
+        </div>
+      </figure>
+      <figure id="ancre11" class="img11 mt-5">
+        <%= image_tag "ecosse.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Scotland: Edinburg, Inverness</div>
+        </div>
+      </figure>
+      <figure id="ancre5" class="img5 mt-5">
+        <%= image_tag "canada.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Canada: Montréal, Québec, Ottawa, Toronto</div>
+        </div>
+      </figure>
+      <figure id="ancre4" class="img4 mt-5 mb-3">
+        <%= image_tag "ladhak.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Indien Himalayas: Ladhak, "le Petit Tibet", Leh, trekking</div>
+        </div>
+      </figure>
+      <figure id="ancre7" class="img7 mt-3">
+        <%= image_tag "allemagne.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Germany: Hamburg, Berlin</div>
+        </div>
+      </figure>
+      <figure id="ancre8" class="img8 mt-3">
+        <%= image_tag "angleterre.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">England</div>
+        </div>
+      </figure>
+      <figure id="ancre6" class="img6 mt-3">
+        <%= image_tag "argentin.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Argentina: Buenos Aires, El Calafate, Rio Gallegos, Ushuaïa</div>
+        </div>
+      </figure>
+      <figure id="ancre14" class="img14 mt-3">
+        <%= image_tag "pologne.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Poland: Poznan, Warsaw, Gdansk</div>
+        </div>
+      </figure>
+      <figure id="ancre15" class="img15 mt-3">
+        <%= image_tag "ireland.png", class:"img" %>
+         <div class="middle">
+          <div class="text align-items-center">Ireland: Dublin</div>
+        </div>
+      </figure>
+      <figure id="ancre18" class="img18 mt-3">
+        <%= image_tag "suede.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Suede: Stockholm, Sandhamn</div>
+        </div>
+      </figure>
+      <figure id="ancre13" class="img13 mt-3">
+        <%= image_tag "grece.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Greece: Athens</div>
+        </div>
+      </figure>
+      <figure id="ancre16" class="img16 mt-5">
+        <%= image_tag "portugal.png", class:"img" %>
+         <div class="middle">
+          <div class="text align-items-center">Portugal: Porto</div>
+        </div>
+      </figure>
+      <figure id="ancre17" class="img17 mt-5">
+        <%= image_tag "paysbas.png", class:"img" %>
+         <div class="middle">
+          <div class="text align-items-center">Netherlands: Amsterdam, La Haye</div>
+        </div>
+      </figure>
+      <figure id="ancre19" class="img19 mt-5">
+        <%= image_tag "reptcheque.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Czech Republic: Prague</div>
+        </div>
+      </figure>
+      <figure id="ancre12" class="img12">
+        <%= image_tag "espagne.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Spain: Barcelona, Azuaga</div>
+        </div>
+      </figure>
+      <figure id="ancre20" class="img20">
+        <%= image_tag "estonie.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Estonia: Tallin</div>
+        </div>
+      </figure>
+      <figure id="ancre21" class="img21 mt-5">
+        <%= image_tag "lettonie.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Latvia: Riga</div>
+        </div>
+      </figure>
+      <figure id="ancre10" class="img10">
+        <%= image_tag "danemark.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Denmark: Copenhagen</div>
+        </div>
+      </figure>
+      <figure id="ancre22" class="img22">
+        <%= image_tag "lituanie.png", class:"img" %>
+        <div class="middle">
+          <div class="text align-items-center">Lithuania: Vilnius</div>
+        </div>
+      </figure>
+  </div>
+  </main>
+</div>
+
+<footer class = "footer mt-5">
+  <div class = "footer-container" >
+    <div class = "icons-container">
+      <p>Suivez-moi</p>
+      <div class="icons pb-3">
+       <a href = "" target="_blank"><i class="footer-icon fab fa-facebook-square fa-2x"></i></a>
+       <a href = "" target="_blank"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
+       <a href = "" target="_blank"><i class="footer-icon fab fa-github fa-2x"></i></a>
+      </div>
+    </div>
+    <p>© 2022 Passions YB 👩‍💻</p>
+  </div>
+</footer>
