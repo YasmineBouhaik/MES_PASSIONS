@@ -11,14 +11,14 @@
   <h2> Bouger 🏃‍♀️🧘‍♀️🎾 </h2>
 </div>
 
-<div class="container mb-5 mt-5">
-  <input type="color" id="colorInputColor"><br>
+<div class="container mb-5">
+ <input type="color" id="colorInputColor"><br>
   <input type="button" id="colorButton" value="click to change color" onclick="changeColor()">
   <script>
     function changeColor() {
       let color = document.getElementById('colorInputColor').value;
       document.body.style.backgroundColor = color;
-      document.getElementById('colorInputText').value = color;
+      document.getElementById('colorInputColor').value = color;
     }
   </script>
 </div>
