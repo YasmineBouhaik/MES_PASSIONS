@@ -1,12 +1,4 @@
 <%= render 'shared/navbar' %>
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-    function addDarkmodeWidget() {
-      new Darkmode().showWidget();
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-    </script>
-
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);">
   <div class="container-title">
     <h1>Mes passions </h1>
@@ -57,7 +49,6 @@
   </form>
 </div>
 
-
 <footer class = "footer mt-5">
   <div class = "footer-container" >
     <div class = "icons-container">
@@ -70,3 +61,10 @@
     <p>© 2022 Passions YB 👩‍💻</p>
   </div>
 </footer>
+
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
