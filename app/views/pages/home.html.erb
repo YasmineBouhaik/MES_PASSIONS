@@ -6,8 +6,8 @@
     <p>
       <span id="banner-typed-text"></span>
     </p>
-  </div>
 </div>
+
 
 <div class="container">
     <div class="card-body">
@@ -19,18 +19,6 @@
       </div>
     </div>
   </div>
-</div>
-
-<div class="container mb-5">
- <input type="color" id="colorInputColor"><br>
-  <input type="button" id="colorButton" value="click to change color" onclick="changeColor()">
-  <script>
-    function changeColor() {
-      let color = document.getElementById('colorInputColor').value;
-      document.body.style.backgroundColor = color;
-      document.getElementById('colorInputColor').value = color;
-    }
-  </script>
 </div>
 
 <div class="container">
@@ -48,6 +36,182 @@
     </div>
   </form>
 </div>
+
+    <style>
+    html,
+    body {
+        transition: all .4s linear;
+    }
+
+    .wrapper {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        margin: 150px auto;
+        background: transparent;
+    }
+
+    .wrapper #btn {
+        position: absolute;
+        height: 50px;
+        width: 100px;
+        background: #266dd2;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        font-family: "lato", sans-serif;
+        font-size: 20px;
+        line-height: 48px;
+        left: 98px;
+        cursor: pointer;
+        transition: all .4s ease-in-out
+    }
+
+    .wrapper #btn .menu {
+        position: absolute;
+        height: 148px;
+        width: 200px;
+        top: 51px;
+        background: #fff;
+        border-radius: 28px;
+        border: 2px solid #266dd2;
+        right: -54px;
+        visibility: hidden;
+        transition: all .3s ease-in-out
+    }
+
+    .wrapper #btn .menu span:nth-child(1) {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: tomato;
+        left: 6px;
+        top: 16px
+    }
+
+    .wrapper #btn .menu span:nth-child(2) {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #f03434;
+        border: 1px solid #fff;
+        left: 74px;
+        top: 16px
+    }
+
+    .wrapper #btn .menu span:nth-child(3) {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: #9a12b3;
+        left: 143px;
+        top: 16px
+    }
+
+    .wrapper #btn .menu span:nth-child(4) {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #1ba39c;
+        border: 1px solid #fff;
+        left: 6px;
+        top: 81px
+    }
+
+    .wrapper #btn .menu span:nth-child(5) {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: #4183d7;
+        left: 74px;
+        top: 81px
+    }
+
+    .wrapper #btn .menu span:nth-child(6) {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #9395a7;
+        border: 1px solid #fff;
+        left: 143px;
+        top: 91px
+    }
+
+    .wrapper #btn:hover {
+        background: #154fa0
+    }
+
+    .wrapper #btn:hover .menu {
+        visibility: visible;
+        animation: anim .4s ease-in-out 1;
+    }
+
+    @keyframes anim {
+        0% {
+            transform: scale(0.4);
+            opacity: 0.8;
+            top: 0px;
+        }
+        100% {
+            transform: scale(1)
+        }
+    }
+</style>
+
+<body>
+  <div class="wrapper">
+    <div id="btn">
+      colors
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var s1 = ".wrapper #btn .menu span:nth-child(1)";
+        $(s1).on('click', function() {
+        $('html,body').css('background', 'tomato');
+      });
+      var s2 = ".wrapper #btn .menu span:nth-child(2)";
+      $(s2).on('click', function() {
+      $('html,body').css('background', '#f03434');
+      });
+      var s3 = ".wrapper #btn .menu span:nth-child(3)";
+      $(s3).on('click', function() {
+      $('html,body').css('background', '#9a12b3');
+      });
+       var s4 = ".wrapper #btn .menu span:nth-child(4)";
+        $(s4).on('click', function() {
+        $('html,body').css('background', '#1CA39B');
+      });
+      var s5 = ".wrapper #btn .menu span:nth-child(5)";
+      $(s5).on('click', function() {
+      $('html,body').css('background', '#4183D7');
+      });
+      var s6 = ".wrapper #btn .menu span:nth-child(6)";
+      $(s6).on('click', function() {
+      $('html,body').css('background', '#9296A6');
+      });
+      });
+</script>
 
 <footer class = "footer mt-5">
   <div class = "footer-container" >
