@@ -45,9 +45,8 @@
 
     .wrapper {
         position: relative;
-        height: 300px;
-        width: 300px;
-        margin: 150px auto;
+        height: 100px;
+        width: 100px;
         background: transparent;
     }
 
@@ -55,7 +54,7 @@
         position: absolute;
         height: 50px;
         width: 100px;
-        background: #266dd2;
+        background: #22618B;
         text-transform: uppercase;
         color: #fff;
         font-weight: 600;
@@ -65,7 +64,8 @@
         line-height: 48px;
         left: 98px;
         cursor: pointer;
-        transition: all .4s ease-in-out
+        transition: all .4s ease-in-out;
+        border-radius: 8px;
     }
 
     .wrapper #btn .menu {
@@ -169,7 +169,7 @@
 </style>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper d-flex align-items-end flex-column">
     <div id="btn">
       colors
       <div class="menu">
