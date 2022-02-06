@@ -8,36 +8,90 @@
     </p>
   </div>
 
-<div class="container">
-    <div class="card-body">
-      <img class="avatar-large mb-3 mt-3" alt="avatar-large" src="https://avatars.githubusercontent.com/u/89265583?v=4" />
-      <br>
-      <p>Salut, je m'appelle Yasmine</p>
-      <p>Voici un site dédié à mes passions. J'adore faire du sport, de la musique et voyager !
-      <br>N'hésitez pas à m'envoyer un message via le formulaire !</p>
-    </div>
-</div>
+<div class="panel" id="panel">
+  <div class="container">
+      <div class="card-body">
+        <img class="avatar-large mb-3 mt-3" alt="avatar-large" src="https://avatars.githubusercontent.com/u/89265583?v=4" />
+        <br>
+        <p>Salut, je m'appelle Yasmine</p>
+        <p>Voici un site dédié à mes passions. J'adore faire du sport, de la musique et voyager !
+        <br>N'hésitez pas à m'envoyer un message via le formulaire !</p>
+        <p>Ci-dessous une roue chromatique , choisissez une couleur de fond ! 🎨 </p>
+      </div>
+  </div>
 
-<div class="container mt-5">
-  <form action="#" method="get">
-    <div>
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="user_name">
-    </div>
-    <div>
-      <label for="msg">Message :</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </div>
-    <div>
-      <input type="submit" value="Envoyer" />
-    </div>
-  </form>
+<div class="container">
+  <div class="color-picker"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  <script>
+    let panel = document.getElementById('panel')
+    const pickr = Pickr.create({
+      el: '.color-picker',
+      theme: 'classic',
+
+      swatches: [
+        'rgba(244, 67, 54, 1)',
+        'rgba(233, 30, 99, 0.95)',
+        'rgba(156, 39, 176, 0.9)',
+        'rgba(103, 58, 183, 0.85)',
+        'rgba(63, 81, 181, 0.8)',
+        'rgba(33, 150, 243, 0.75)',
+        'rgba(3, 169, 244, 0.7)',
+        'rgba(0, 188, 212, 0.7)',
+        'rgba(0, 150, 136, 0.75)',
+        'rgba(76, 175, 80, 0.8)',
+        'rgba(139, 195, 74, 0.85)',
+        'rgba(205, 220, 57, 0.9)',
+        'rgba(255, 235, 59, 0.95)',
+        'rgba(255, 193, 7, 1)'
+      ],
+
+      components: {
+        preview: true,
+        opacity: true,
+        hue: true,
+
+        interaction: {
+          hex: false,
+          rgba: true,
+          hsla: false,
+          hsva: false,
+          cmyk: false,
+          input: true,
+          clear: true,
+          save: true
+        }
+      }
+    });
+
+    pickr.on('change', (...args) => {
+      let color = args[0].toRGBA();
+      console.log(color);
+      this.panel.style.backgroundColor = `rgba(${color[0]},${color[1]},${color[2]},${color[3]})`;
+  });
+  </script>
+
+  <div class="container mt-5">
+    <form action="#" method="get">
+      <div>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="user_name">
+      </div>
+      <div>
+        <label for="msg">Message :</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Envoyer" />
+      </div>
+    </form>
+  </div>
 </div>
 
 <footer class = "footer mt-5">
   <div class = "footer-container" >
     <div class = "icons-container">
-      <p>Suivez-moi</p>
+      <h5>Suivez-moi</h5>
         <div class="icons pb-3">
           <a href = "https://github.com/YasmineBouhaik" target="_blank"><i class="footer-icon fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/yasminebouhaik/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
